@@ -1,0 +1,129 @@
+#comments {
+	border: 2px aquamarine solid;
+	border-radius: 10px;
+	margin: 2vh 0vh 2vh 0vh;
+	padding: 3px;
+  overflow-y: scroll; 
+	width: 20%;
+  height: 70vh;
+}
+
+/*modified lab form css*/
+.comment-form {
+	margin-top: 20px;
+	border-radius: 10px;
+	border: 0px #3c3d3f solid;
+	padding: 20px 10px 10px 10px;
+	display: flex;
+	flex-direction: column;
+	width: auto;
+	background-color: wheat;
+}
+
+.form-element .comment-content {
+  background: aliceblue;
+}
+
+.comment-form .form-title {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin: -20px -10px 20px -10px;
+  padding: 10px 25px 10px 25px;
+  color: aquamarine;
+  background-color: rgb(136, 127, 255);
+  border-radius: 7px 7px 0px 0px;
+}
+
+.comment-form .form-radio {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.comment-form .form-element {
+  margin-bottom: 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 5px 10px 5px 10px;
+  background-color: aliceblue;
+}
+
+#messages {
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  width: 100%;
+  margin: auto;
+  height: auto;
+  margin-top: 20px;
+  border-bottom: 1px solid grey;
+}
+
+.message-user-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+.message-user {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.message-username {
+  padding-top: 5px;
+}
+
+.message-content {
+  flex: 4;
+  width: 100%;
+  font-size: 24px;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 40px;
+}
+
+.icon:hover {
+  background-color: gray;
+}
+
+.delete-icon {
+  background-image: url("../media/delete-icon.png");
+}
+
+.comment-nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 2vh;
+  font-size: 20px;
+  font-weight: bolder;
+}
+.comment-nav-arrows:hover {
+  background-color: gray;
+}
+
+@media (max-width: 768px) {
+	#comments {
+		width: 90vw;
+    height: auto;
+	}
+  #message-container {
+    padding: 2vw;
+  }
+}

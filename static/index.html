@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>The Web Gallery</title>
+    <link href="styles/styles.css" rel="stylesheet" type="text/css" />
+    <link href="styles/form.css" rel="stylesheet" type="text/css" />
+    <link href="styles/comments.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <header>
+      <a href="/" id="title">The Web Gallery</a>
+      <a href="/login.html" id="signup" class="submit-btn"
+        >Sign Up or Sign In</a
+      >
+      <a href="/signout/" id="signout" class="submit-btn">Sign out</a>
+      <div class="submit-btn" id="submit-image">Submit image here</div>
+    </header>
+    <div class="hidden nav-overlay">
+      <div id="user-nav-container">
+        <div class="user-nav-arrows" id="user-nav-arrows-left"><</div>
+        <div id="user">aaaa</div>
+        <div class="user-nav-arrows" id="user-nav-arrows-right">></div>
+      </div>
+    </div>
+
+    <div class="hidden overlay">
+      <form class="complex-form" id="create-image-form">
+        <div class="form-title">
+          Add Image
+          <div class="cancel">Close</div>
+        </div>
+
+        <input
+          type="text"
+          id="post-title"
+          class="form-element"
+          placeholder="Enter the title"
+          name="title"
+          maxlength="60"
+          required
+        />
+        <input
+          type="file"
+          id="post-file"
+          accept="image/*"
+          name="picture"
+          class="form-element"
+          required
+        />
+        <button type="submit" class="btn">Add Image</button>
+      </form>
+    </div>
+
+    <div id="content">
+      <div id="gallery">
+        <div class="nav-arrows" id="img-nav-left"><</div>
+        <div class="img-container">
+          <div class="title">
+            <div id="img-title"></div>
+            <div id="img-author"></div>
+          </div>
+          <img class="img" src="./media/Empty.png" alt="windows 10" />
+          <div class="delete" id="delete-img">Delete</div>
+        </div>
+        <div class="nav-arrows" id="img-nav-right">></div>
+      </div>
+      <div id="comments">
+        <form class="comment-form" id="create-comment-form">
+          <div class="form-title">Comments</div>
+          <textarea
+            rows="5"
+            id="comment-content"
+            class="form-element"
+            name="content"
+            placeholder="Enter your message"
+            required
+          ></textarea>
+          <button type="submit" class="btn">Add Comment</button>
+        </form>
+        <div id="message-container"></div>
+        <div class="comment-nav-container">
+          <div class="comment-nav-arrows" id="comment-nav-left"><<<</div>
+          <div class="comment-nav-arrows" id="comment-nav-right">>>></div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <footer>
+    <a href="/credits.html" class="title">credits</a>
+  </footer>
+  <script src="js/script.js"></script>
+  <script src="js/api-service.js"></script>
+</html>
